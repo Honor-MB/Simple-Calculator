@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Calculator</h1>
+
+            <!-- WHERE TO INPUT NUMBER -->
+
+            <section class="cal__input-section">
+                <input class="cal__input" id="firstnum" type="number" placeholder="enter number">
+                <input class="cal__input" id="secondnum" type="number" placeholder="enter number">
+            </section>
+
+            <!-- CALCULATOR BUTTONS -->
+
+            <section class="cal__btn-section">
+                <div class="btn__rapper">
+                    <button class="btn btn__multiply" id="multiply">×</button>
+                    <p class="btn__description">multiply</p>
+                </div>
+                <div class="btn__rapper">
+                    <button class="btn btn__divide" id="divide">÷</button>
+                    <p class="btn__description">divide</p>
+                </div>
+                <div class="btn__rapper">
+                    <button class="btn btn__add" id="add">+</button>
+                    <p class="btn__description">add</p>
+                </div>
+                <div class="btn__rapper">
+                    <button class="btn btn__subtract" id="subtract">−</button>
+                    <p class="btn__description">subtract</p>
+                </div>
+            </section>
+
+            <!-- YOUR ANSWER -->
+
+            <div class="answer__rapper">
+                <p >Answer</p>
+                <div class="display__answer" id="show">0</div>
+            </div>
+        </section>
+
+        <a href="./index2.html">Cheak out girls calculator </a>
+        
+    </main>
+</body>
+</html>

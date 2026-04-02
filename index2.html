@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <section class="head__container">
+                <div class="head__content">
+                    <h1 class="head__title">Calculator</h1>
+                    <p class="head__description">Perform basic operation instantly</p>
+                </div>
+                <div class="calc__icon-rapper"><i class="ph ph-calculator calc__icon"></i></div>
+            </section>
+
+            <!-- WHERE TO INPUT NUMBER -->
+
+            <section class="cal__input-section">
+                <input class="cal__input" id="firstnum" type="number" placeholder="enter number">
+                <input class="cal__input" id="secondnum" type="number" placeholder="enter number">
+            </section>
+
+            <!-- CALCULATOR BUTTONS -->
+
+            <section class="cal__btn-section">
+                    <button class="btn btn__multiply" id="multiply"><span class="operator">×</span> multiply</button>
+                    <button class="btn btn__divide" id="divide"><span class="operator">÷</span> divide</span></button>
+                    <button class="btn btn__add" id="add"><span class="operator">+</span> add</span></button>
+                    <button class="btn btn__subtract" id="subtract"><span class="operator">−</span> subtract</span></button>
+            </section>
+
+            <!-- YOUR ANSWER -->
+
+                <div class="display__answer"> Answer <span class="answer" id="show">0</span></div>
+        </section>
+        <a href="./index.html">Cheak out boys calculator</a>
+    </main>
+</body>
+</html>
