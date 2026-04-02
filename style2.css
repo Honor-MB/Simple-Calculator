@@ -134,8 +134,21 @@ a
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    box-shadow: var(--Shadow);
-    
+    box-shadow: var(--Shadow);  
+    transition: all 0.2s ease;
+    cursor: pointer; 
+}
+
+.btn:hover
+{
+    filter: brightness(120%);
+    transform: translateY(-2px);
+}
+
+.btn:active
+{
+    filter: brightness(150%);
+    transform: scale(0.95);
 }
 
 .operator
@@ -143,12 +156,12 @@ a
     font-size: 2rem;
     font-weight: bold;
 }
+
 .btn__multiply
 {
     background-color: var(--Multiply);
     color: purple;
     border: .1rem solid purple;
-
 }
 
 .btn__divide
@@ -157,12 +170,14 @@ a
     color: blue;
     border: .1rem solid blue;
 }
+
 .btn__add
 {
     background-color: var(--Add);
     color: #0f0;
     border: .1rem solid #0f0;
 }
+
 .btn__subtract
 {
     background-color: var(--Subtract);
@@ -191,4 +206,66 @@ a
     padding-left: 4rem;
     margin-left: 4rem;
     overflow: hidden;
+}
+
+@media(max-width: 500px)
+{
+    html
+    {
+        font-size: 25%;
+    }
+
+    body
+    {
+        font-size: 4rem;
+    }
+
+    .container
+    {
+        width: 65rem;
+        gap: 3rem;
+    }
+    
+    .cal__input-section
+    {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    }
+
+    .cal__btn-section
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .btn
+    {
+        font-size: 3.5rem;
+    }
+
+    .operator
+    {
+        font-size: 5rem;
+    }
+
+    .calc__icon-rapper
+    {
+        display: none;
+    }
+    
+    .head__description
+    {
+        font-size: 3rem;
+    }
+
+    .cal__input, .btn, .display__answer
+    {
+        padding: 2.5rem;
+    }
+
+    .answer
+    {
+        font-size: 8rem;
+    }
 }
