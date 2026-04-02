@@ -181,6 +181,7 @@ a
     align-items: center;
     font-weight: bold;
     margin-bottom: 3rem;
+    overflow: hidden;
 }
 
 .answer
@@ -189,4 +190,5 @@ a
     border-left: .1rem solid var(--Border);
     padding-left: 4rem;
     margin-left: 4rem;
+    overflow: hidden;
 }
